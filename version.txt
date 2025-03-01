@@ -1,1 +1,7 @@
+Version 1.0.2
+- fix class not found
+
 Version 1.0.1 Alpha
+- fix running read
+
+Version 1.0.0 Alpha
