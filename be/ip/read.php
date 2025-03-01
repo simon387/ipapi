@@ -2,6 +2,8 @@
 include_once '../config/database.php';
 include_once '../models/Ip.php';
 
+use models\Ip;
+
 $database = new Database();
 $db = $database->getConnection();
 
