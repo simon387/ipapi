@@ -8,9 +8,6 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
 
-      #      - name: Minify Action
-      #        uses: anthonyftwang/minify-action@v1.0.1
-
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -21,7 +18,6 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            deploy_localhost.*
             LICENSE
             README.md
             test/**
