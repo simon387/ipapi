@@ -19,7 +19,7 @@ $ip_address = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'];
 
 if ($ip_->update($ip_address)) {
 	http_response_code(200);
-	echo json_encode(array("response" => "IP updated successfully."));
+	echo json_encode(array("response" => "IP updated successfully: $ip_address"));
 } else {
 	http_response_code(503);
 	echo json_encode(array("response" => "Impossible to update the IP."));
